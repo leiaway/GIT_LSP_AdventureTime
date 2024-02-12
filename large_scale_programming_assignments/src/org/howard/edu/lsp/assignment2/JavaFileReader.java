@@ -50,10 +50,5 @@ public class JavaFileReader {
         wordCounts.entrySet().stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .forEach(System.out::println);
-
-//    private static void printWordCounts(Map<String, Integer> wordCounts) {
-//        wordCounts.entrySet().stream()
-//                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-//                .forEach(System.out::println);
     }
 }
