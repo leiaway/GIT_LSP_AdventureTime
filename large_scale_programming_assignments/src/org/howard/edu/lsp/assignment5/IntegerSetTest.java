@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class IntegerSetTest {
 
-    @Test("Test case for clear methods")
+    @Test
     public void testClear() {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -18,7 +18,7 @@ class IntegerSetTest {
         assertTrue(set.isEmpty());
     }
 
-    @Test("Test case for length method")
+    @Test//("Test case for length method")
     public void testLength() {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -26,7 +26,7 @@ class IntegerSetTest {
         assertEquals(2, set.length());
     }
 
-    @Test("Test case for the contain method")
+    @Test//("Test case for the contain method")
     public void testContains() {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -34,7 +34,7 @@ class IntegerSetTest {
         assertFalse(set.contains(2));
     }
 
-    @Test("Test case for the largest methods")
+    @Test//("Test case for the largest methods")
     public void testLargest() throws IntegerSet.IntegerSetException {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -43,7 +43,7 @@ class IntegerSetTest {
         assertEquals(3, set.largest());
     }
 
-    @Test("Test case for the smallest method")
+    @Test//("Test case for the smallest method")
     public void testSmallest() throws IntegerSet.IntegerSetException {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -52,14 +52,14 @@ class IntegerSetTest {
         assertEquals(1, set.smallest());
     }
 
-    @Test("Test case for add method")
+    @Test//("Test case for add method")
     public void testAdd() {
         IntegerSet set = new IntegerSet();
         set.add(1);
         assertTrue(set.contains(1));
     }
 
-    @Test("Test case for remove method")
+    @Test//("Test case for remove method")
     public void testRemove() {
         IntegerSet set = new IntegerSet();
         set.add(1);
@@ -67,7 +67,7 @@ class IntegerSetTest {
         assertFalse(set.contains(1));
     }
 
-    @Test("Test case for union method")
+    @Test//("Test case for union method")
     public void testUnion() {
         IntegerSet set1 = new IntegerSet();
         set1.add(1);
@@ -84,7 +84,7 @@ class IntegerSetTest {
         assertTrue(set1.contains(3));
     }
 
-    @Test("Test case for intersect method")
+    @Test//("Test case for intersect method")
     public void testIntersect() {
         IntegerSet set1 = new IntegerSet();
         set1.add(1);
@@ -101,7 +101,7 @@ class IntegerSetTest {
         assertFalse(set1.contains(3));
     }
 
-    @Test("Test case for diff method")
+    @Test//("Test case for diff method")
     public void testDiff() {
         IntegerSet set1 = new IntegerSet();
         set1.add(1);
@@ -118,7 +118,7 @@ class IntegerSetTest {
         assertFalse(set1.contains(3));
     }
 
-    @Test("Test case for complement method")
+    @Test//("Test case for complement method")
     public void testComplement() {
         IntegerSet set1 = new IntegerSet();
         set1.add(1);
@@ -135,7 +135,7 @@ class IntegerSetTest {
         assertTrue(set1.contains(3));
     }
 
-    @Test("Test case for isEmpty method")
+    @Test//("Test case for isEmpty method")
     public void testIsEmpty() {
         IntegerSet set = new IntegerSet();
         assertTrue(set.isEmpty());
@@ -143,7 +143,7 @@ class IntegerSetTest {
         assertFalse(set.isEmpty());
     }
 
-    @Test("Test case for toString method")
+    @Test//("Test case for toString method")
     public void testToString() {
         IntegerSet set = new IntegerSet();
         set.add(1);
